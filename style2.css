@@ -60,7 +60,7 @@ h1{
   }
   .widget-title
   {
-    font-size: 15px;
+    font-size: 13px;
   }
   
 }
@@ -99,7 +99,7 @@ footer{
     width: 25vw;
     position: relative;
     right: 110px;
-    margin-left: 50px;
+    margin-left: 250px;
   }
   .footer-item1{
     height: 100px;
