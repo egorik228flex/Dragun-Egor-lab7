@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -44,6 +45,25 @@ h1{
   text-align: center;
   font-size: 80px;
 }
+@media(max-width:700px)  {
+  h1{
+    font-size: 45px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .sergi{
+    font-size: 28px;
+  }
+  .info {
+    font-size: 15px;
+  }
+  .widget-title
+  {
+    font-size: 15px;
+  }
+  
+}
 img{
   width: 100%;
   margin: 1vh 0;
@@ -75,13 +95,14 @@ footer{
 }
 @media (max-width:700px) {
   .footer-item2{
-    height: 125px;
+    height: 100px;
     width: 25vw;
     position: relative;
     right: 110px;
+    margin-left: 50px;
   }
   .footer-item1{
-    height: 125px;
+    height: 100px;
     width: 25vw;
     position: relative;
     left: 110px;
@@ -209,7 +230,7 @@ background-image: linear-gradient(315deg,  #542333 0%, #a8707c 74%);
 @media(max-width:700px) {
   .colco{
       position: relative;
-      top: 1050px;
+      top: 320px;
   }
 }
 h3
@@ -222,117 +243,52 @@ h3
 }
 @media (max-width:700px) {
   .teleph{
-    font-size:15px ;
+    font-size:13px ;
+  }
+  .mi{
+    font-size: 14px;
+  }
+  .contac
+  {
+    font-size: 14px;
   }
 }
-.social-icons {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 0;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  border-radius: 30%;
-}
-.social-icons>li {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-.social-icons a {
-  position: relative;
-  background-color:#612745;
-  display: block;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  transition: background-color .3s ease-in-out;
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 50%;
-}
-.social-icons a:hover {
-  background-color: #9b392c4f;
-}
-.social-icons a::before {
-  content: "";
-  position: absolute;
-  width: 1.4rem;
-  height: 1.4rem;
-  left: .65rem;
-  top: .65rem;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
-}
-.social-icons .social-icon-twitter::before {
-  background-image: url("https://cdn.icon-icons.com/icons2/2351/PNG/512/logo_twitter_bird_icon_143203.png");
-  background-size: 25px;
-  top: 13px;
-  left: 13px;
 
+.social {display: inline-block;}
+.social a {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 10px 10px 0;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 24px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
 }
-.social-icons .social-icon-fb::before {
-  background-image: url("https://cdn.icon-icons.com/icons2/642/PNG/512/facebook_icon-icons.com_59205.png");
-  background-size: 25px;
-  bottom: 13px;
-  left:12px;
+.social a:hover {color: #fff;}
+.social svg {
+	margin-top: 7px;
+	width: 32px;
+	height: 32px;
+}
+.telegram a:hover {background: #249bd7;}
+.twitter a:hover {background: #00acee;}
+.youtube a:hover {background: #c4302b;}
+@media (max-width:700px){
+  .social a{
+    width: 27px;
+    height: 27px;
+    position: relative;
+    left: 5px;
+  }
+  .social svg{
+    width: 13px;
+    height: 13px;
+  }
+}
 
-}
-.social-icons .social-icon-vk::before {
-  background-image: url("http://cdn.icon-icons.com/icons2/1753/PNG/512/iconfinder-social-media-applications-32vk-4102593_113806.png");
-  background-size: 25px;
-  bottom: 15px;
-  left: 12px;
-  
-}
-.social-icons .social-icon-telegram::before {
-  background-image: url("https://cdn.icon-icons.com/icons2/923/PNG/512/telegram_icon-icons.com_72055.png");
-  background-size: 25px;
-  bottom: 13px;
-  left: 11px;
-}
-@media(max-width:700px) {
-  .social-icons{
-     width: 20px;
-     height: 0px;
-     position: relative;
-     left: 72px;
-     bottom: 15px;
-
-  }
-  .social-icons a{
-    width: 1.8rem;
-    height: 2rem;
-  }
-  .social-icons a::before{
-    
-    width: 1rem;
-    height: 1.2rem;
-    bottom: 200px;
-  }
-  .social-icons .social-icon-twitter::before{
-    background-size: 14px;
-    top:6px;
-    left:6px;
-  }
-  .social-icons .social-icon-fb::before{
-    background-size: 16px;
-    top:6px;
-    left:7px;
-  }
-  .social-icons .social-icon-vk::before{
-    background-size: 14px;
-    top:6px;
-    left:6.5px;
-  }
-  .social-icons .social-icon-telegram::before{
-    background-size: 16px;
-    top:6px;
-    left:6px;
-  }
-}
 ::-webkit-scrollbar {
   width: 24px; 
   height: 8px; 
